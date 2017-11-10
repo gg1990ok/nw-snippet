@@ -1,0 +1,136 @@
+{// ===========================
+	// native-weex
+	"weex-openFullScreenWeb": {
+		"prefix": "nw.utils.openFullScreenWeb",
+		"body": [
+			"nw.utils.openFullScreenWeb({",
+			"\turl: '${1:url}', // 需要打开的地址",
+			"\ttype: ${2:1}, // 打开的目标类型： //1:本地类型 //2: 在线地址类型",
+			"\tselector: '$3', // 打开WebView的时候需要调用的方法",
+			"\tparams: {$4}, // 调用方法的参数",
+			"}, (param) => {",
+			"\t// ${5:{error: 错误信息, result: 结果内容} }",
+			"});",
+			"$6"
+		],
+		"description": "打开透明背景的webview"
+	},
+
+	"weex-progress": {
+		"prefix": "nw.utils.progress.show",
+		"body": [
+			"nw.utils.progress.show();",
+			"$0"
+		],
+		"description": "weex-显示loading"
+	},
+
+	"weex-progress-dismiss": {
+		"prefix": "nw.utils.progress.dismiss",
+		"body": [
+			"nw.utils.progress.dismiss();",
+			"$0"
+		],
+		"description": "weex-隐藏loading"
+	},
+
+	"weex-toast": {
+		"prefix": "nw.utils.toast",
+		"body": [
+			"nw.utils.toast('${1:内容}');",
+			"$2"
+		],
+		"description": "toast，默认3秒，duration第二个可选参数"
+	},
+
+	"weex-showLogin": {
+		"prefix": "nw.admin.showLogin",
+		"body": [
+			"nw.admin.showLogin((param) => {",
+			"\t$1",
+			"});",
+			"$2"
+		],
+		"description": "显示登陆框"
+	},
+
+	"weex-confirmLogin": {
+		"prefix": "nw.admin.confirm",
+		"body": [
+			"nw.admin.confirm({ type: '1' }, (param) => {",
+			"\t$1",
+			"});",
+			"$2"
+		],
+		"description": "验证密码"
+	},
+
+	"weex-route": {
+		"prefix": "nw.utils.route",
+		"body": [
+			"nw.utils.route('${1:module}', '${2:pageName}', {$3});"
+		],
+		"description": "页面跳转"
+	},
+
+	"weex-route-close": {
+		"prefix": "nw.utils.routeClose",
+		"body": [
+			"nw.utils.routeClose();"
+		],
+		"description": "关闭route"
+	},
+
+	"weex-getParams": {
+		"prefix": "nw.utils.getParams",
+		"body": [
+			"nw.utils.getParams();"
+		],
+		"description": "获取路由参数"
+	},
+
+	"weex-dialog": {
+		"prefix": "nw.utils.dialog",
+		"body": [
+			"nw.utils.dialog({",
+			"\tcontent: '${1:富强 民主 文明 和谐}',",
+			"\tbuttons: [",
+			"\t\t{",
+			"\t\t\tname: '是',",
+			"\t\t\tstyle: 0,",
+			"\t\t\taction(tag) {},",
+			"\t\t},",
+			"\t],",
+			"});"
+		],
+		"description": "显示弹窗"
+	},
+
+	"weex-close-dialog": {
+		"prefix": "nw.utils.closeDialog",
+		"body": [
+			"nw.utils.closeDialog('${1:all}');"
+		],
+		"description": "关闭弹窗"
+	},
+
+	"weex-getCommonParam": {
+		"prefix": "nw.utils.getCommonParam",
+		"body": [
+			"nw.utils.getCommonParam((params) => {",
+				"\t$1",
+			"});"
+		],
+		"description": "获取公共参数"
+	},
+
+	"weex-getUserInfo": {
+		"prefix": "nw.utils.getUserInfo",
+		"body": [
+			"nw.utils.getUserInfo((params) => {",
+				"\t$1",
+			"});"
+		],
+		"description": "获取当前登录的用户信息，卡号等"
+  }
+}
