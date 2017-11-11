@@ -1,7 +1,9 @@
-# Change Log
-All notable changes to the "nwsnippet" extension will be documented in this file.
+# 0.0.1
+第一个版本
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
+# 0.0.2
+- 修改vscode最低支持版本 
 
-## [Unreleased]
-- Initial release
+# 0.0.3
+- 增加ReadMe
+- 增加logo
