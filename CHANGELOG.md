@@ -13,3 +13,6 @@
 
 # 0.0.5
 - 增加 原生页面跳转方法 nw.utils.routeNative
+
+# 0.0.6 
+- 增加 生成条形码函数 barCodeGenerate

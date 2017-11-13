@@ -114,6 +114,19 @@
 		"description": "显示弹窗"
 	},
 
+	"weex-barCodeGenerate": {
+		"prefix": "nw.utils.barCodeGenerate",
+		"body": [
+			"nw.utils.barCodeGenerate({",
+				"\tcontent: '1234',",
+				"\tcallback: () => {",
+					"\t\t// TODO",
+				"\t},",
+			"});"
+		],
+		"description": "生成条形码图片"
+	},
+
 	"weex-close-dialog": {
 		"prefix": "nw.utils.closeDialog",
 		"body": [
