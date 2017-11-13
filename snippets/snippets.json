@@ -73,6 +73,14 @@
 		"description": "页面跳转"
 	},
 
+	"weex-routeNative": {
+		"prefix": "nw.utils.routeNative",
+		"body": [
+			"nw.utils.routeNative('${1:module}', '${2:pageName}', {$3});"
+		],
+		"description": "原生页面跳转"
+	},
+
 	"weex-route-close": {
 		"prefix": "nw.utils.routeClose",
 		"body": [

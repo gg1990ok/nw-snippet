@@ -6,4 +6,10 @@
 
 # 0.0.3
 - 增加ReadMe
-- 增加logo
+- 增加logo  
+
+# 0.0.4 
+- 完善文档
+
+# 0.0.5
+- 增加 原生页面跳转方法 nw.utils.routeNative

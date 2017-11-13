@@ -2,7 +2,7 @@
     "name": "nwsnippet",
     "displayName": "nw-snippet",
     "description": "nw",
-    "version": "0.0.4",
+    "version": "0.0.5",
     "publisher": "guocg",
     "engines": {
         "vscode": "^0.1.0"
