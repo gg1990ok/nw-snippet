@@ -153,5 +153,42 @@
 			"});"
 		],
 		"description": "获取当前登录的用户信息，卡号等"
-  }
+	},
+	
+	"weex-btnHold": {
+		"prefix": "nw.nav.btnHold",
+		"body": [
+			"nw.nav.btnHold({",
+				"\tconfig: {",
+        "\t\tdisabled: false, // 使导航栏无效化，无法进行交互，默认为false。",
+        "\t\tleftItem: {",
+            "\t\t\ttitle: '返回', // 设置该Button的title",
+            "\t\t\thide: false, // 是否显示该Button。默认false",
+            "\t\t\tisHold: false, // 是否持有这个按钮的事件，false不持有/true劫持。默认false",
+        "\t\t},",
+    	"\t},",
+    	"\tcallback() {",
+        	"\t\t// TODO",
+					"\t\t// 做你想做的事……^o^",
+				"\t},",
+    "});"
+		],
+		"description": "顶部导航栏按钮动作劫持"
+	},
+
+	"weex-back": {
+		"prefix": "nw.nav.back",
+		"body": [
+			"nw.nav.back();"
+		],
+		"description": "原生返回操作"
+	},
+
+	"weex-home": {
+		"prefix": "nw.nav.home",
+		"body": [
+			"nw.nav.home();"
+		],
+		"description": "回到App首页"
+	}
 }
